@@ -1,0 +1,81 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block title %} El comilón S.A {% endblock %}
+
+{% block body %}
+<section class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 clas="text-warning text-uppercase h6"><br><br>¿Quiénes somos?</h2>
+        <h3 class="text-capitalize">Somos el mejor restaurante de comida casera chilena.</h3>
+        <p class="text-muted">
+
+          El Comilón es un destacado restaurante que se especializa en ofrecer las mejores comidas caseras chilenas. 
+          Su enfoque principal es brindar a sus comensales una experiencia culinaria auténtica y reconfortante. 
+          El restaurante se enorgullece de utilizar ingredientes frescos y de alta calidad para preparar platos tradicionales chilenos. 
+          Desde asados de cordero y empanadas hasta cazuelas y pastel de choclo, cada bocado es una explosión de sabores típicos de la gastronomía chilena. 
+          El ambiente acogedor y familiar complementa la experiencia, haciendo que los clientes se sientan como en casa. 
+          El Comilón es el lugar perfecto para disfrutar de las delicias culinarias chilenas en un entorno agradable y acogedor.
+        </p>
+      </div>
+      <img src="{% static 'img/separador2.png' %}" alt=""/>
+    </div>
+    </section>
+
+<!-- TARJETAS -->
+           <section class="container">
+            <div class="row justify-content-md-center">
+              <div class="col-12 text-center">
+                <h2 class="text-warning text-uppercase h6">Destacados</h2>
+                <h3 class="text-capitalize">Datos</h3>
+              </div>
+
+              <!--Tarjeta 1-->
+              <article class="col-md-6 col-lg-4 card-effect">
+                <div class="card">
+                  <img src="{% static 'img/014.png' %}" alt="Raiting" class="card-img card-img-filter"/>
+                  <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
+                    <h4>COMIDAS</h4>
+                    <p>
+                      La comida casera es sabrosa, llena de amor y cuidado, evoca recuerdos y proporciona una experiencia culinaria reconfortante y auténtica.
+                    </p>
+                 <a href="{% url 'productos' %}" class="text-reset">Encuentralos aquí.</a>
+                  </div>
+                </div>
+              </article>
+
+              <!--Tarjeta 2-->
+              <article class="col-md-6 col-lg-4 card-effect">
+                <div class="card">
+                  <img src="{% static 'img/012.png' %}" alt="Raiting" class="card-img card-img-filter"/>
+                  <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
+                    <h4>TRAGOS</h4>
+                    <p>
+                      Encuentra aquí los mejores tragos.
+                    </p>
+                 <a href="{% url 'productos' %}" class="text-reset">Para más información.</a>
+                  </div>
+                </div>
+              </article>
+
+              
+              <!--Tarjeta 3-->
+              <article class="col-md-6 col-lg-4 card-effect mt-md-4 mt-lg-0">
+                <div class="card">
+                  <img src="{% static 'img/016.png' %}" alt="Raiting" class="card-img card-img-filter"/>
+                  <div class="card-img-overlay text-white d-flex flex-column justify-content-center text-center">
+                    <h4>POSTRES</h4>
+                    <p>
+                      Los postres caseros son deliciosos, satisfacen los antojos más dulces y te brindan una sensación reconfortante y única.
+                    </p>
+                 <a href="{% url 'productos' %}" class="text-reset">Más postres.</a>
+                  </div>
+                </div>
+              </article>
+              <img src="{% static 'img/separador2.png' %}" alt=""/>
+            </div>
+         </section>
+
+<br><br>
+{% endblock  %}

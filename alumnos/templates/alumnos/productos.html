@@ -1,0 +1,209 @@
+{% extends "./base.html" %}
+{% load static %}
+
+{% block title %} El comilón S.A {% endblock %}
+
+{% block body %}
+
+ <h1>Menú</h1>
+
+    <div class="container-icon">
+        <div class="container-cart-icon">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon-cart">
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+                />
+            </svg>
+            <div class="count-products">
+                <span id="contador-productos">0</span>
+            </div>
+        </div>
+        <br><br>
+
+        <div class="container-cart-products hidden-cart">
+            <div class="row-product hidden">
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Zapatos Nike</p>
+                        <span class="precio-producto-carrito">$80</span>
+                    </div>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-close"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12"
+                        />
+                    </svg>
+                </div>
+            </div>
+	
+
+            <div class="cart-total hidden">
+                <h3>Total:</h3>
+                <span class="total-pagar">$200.000</span>
+            </div>
+            <p class="cart-empty">El carrito está vacío</p>
+        </div>
+    </div>
+</header>
+<div class="container-items">
+    <div class="item">
+        <figure>
+            <img
+                src="https://locales.unimarc.cl/wp-content/files_mf/1677081479800x800POLLOARVEJADOCP.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Pollo arvejado</h2>
+            <p class="price">$3500</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="https://bionoticias.cl/wp-content/uploads/2023/02/Porotos-granados-con-mazamorra07.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Porotos con Mazamorra</h2>
+            <p class="price">$3700</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="https://cocinalocal.cl/wp-content/uploads/2021/08/pastel-de-papas.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Pastel de papas</h2>
+            <p class="price">$3700</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="https://www.gourmet.cl/wp-content/uploads/2017/01/curanto-ajustada-570x458.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Curanto en olla</h2>
+            <p class="price">$4000</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img
+                src="https://www.gourmet.cl/wp-content/uploads/2016/09/DSC04085-e1603217444150.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Porotos con rienda</h2>
+            <p class="price">$3500</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+	<div class="item">
+        <figure>
+            <img
+                src="https://www.tipicochileno.cl/wp-content/uploads/2021/05/zapallo-italiano-relleno-1200-628.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Zapallo italiano</h2>
+            <p class="price">$3500</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+	<div class="item">
+        <figure>
+            <img
+                src="https://cocinachilena.cl/wp-content/uploads/2019/08/torta-merengue-5-1024x683.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Torta merengue</h2>
+            <p class="price">$1500</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+	<div class="item">
+        <figure>
+            <img
+                src="https://www.comidastipicaschilenas.com/wp-content/uploads/2020/05/Receta-de-Pie-de-lim%C3%B3n.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Pie de <br>limón</h2>
+            <p class="price">$1500</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+	<div class="item">
+        <figure>
+            <img
+                src="https://mandolina.co/wp-content/uploads/2020/11/leche-asada.jpg"
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Leche <br>asada</h2>
+            <p class="price">$1200</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+	<div class="item">
+        <figure>
+            <img
+                src="https://media.istockphoto.com/id/470149152/es/foto/coca-cola-fanta-and-sprite-frascos-de-vidrio.jpg?s=170667a&w=0&k=20&c=CtXa5LGbwplRW8lheYG-qzCN5r7-35YTwlzzv4ctfO8="
+                alt="producto"
+            />
+        </figure>
+        <div class="info-product">
+            <h2>Bebidas CCU</h2>
+            <p class="price">$1000</p>
+            <button class="btn-add-cart">Añadir al carrito</button>
+        </div>
+    </div>
+    <!-- Jquery -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+            <script src="js/form.js"></script>
+<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+<script src="{% static 'js/index.js' %}"></script>
+</div>
+</div>
+
+
+{% endblock  %}
